@@ -1,41 +1,11 @@
 const path = require('path')
-const MiniCSSEctractPlugin = require('mini-css-extract-plugin')
-const HTMLWebpacktPlugin = require('mini-css-extract-plugin')
-module.exports = {
+
+const config = {
   entry: './src/index.js',
-  mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
-  },  
-  devServer: {
-    contentBase: './dist'
-  }, 
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: '/node_modules/'
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCSSEctractPlugin.loader
-          },
-          'css-loader',
-        ]
-      }
-    ]
-  },
-  plugins: [
-    new MiniCSSEctractPlugin({
-      filename: 'style.css'
-    }),
-    new HTMLWebpacktPlugin({
-      filename: 'index.html',
-      template: './src/index.html'
-    })
-  ]
-}
+  }
+};
+
+module.exports = config

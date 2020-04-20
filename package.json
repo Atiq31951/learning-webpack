@@ -1,25 +1,16 @@
 {
-  "name": "vanillajs-todo-list",
+  "name": "boilerplate-webpack-setting",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -w",
-    "devserver": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Md Atiqur Rahman",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "css-loader": "^3.5.2",
-    "html-webpack-plugin": "^4.0.0-beta.14",
-    "mini-css-extract-plugin": "^0.9.0",
-    "style-loader": "^1.1.4",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack": "^2.7.0"
   }
 }
